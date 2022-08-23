@@ -1,0 +1,23 @@
+.logo-padding{
+    padding: 2.5%;
+    padding-bottom: 6%;
+  }
+
+.input-padding{
+    padding: 1%;  
+}
+
+.app-desction-row-padding{
+    padding: 1%;
+    padding-bottom: 2%;
+}
+.app-descrition{
+   box-sizing: border-box;
+   height: 150%;
+   font-size:14pt;
+   padding-bottom: 10%;
+}
+
+.submit-botten{
+    padding: 1%; 
+}

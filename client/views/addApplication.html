@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AppsCenter</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="../assets/styles/add.css" />
+    <link rel="stylesheet" href="../bootstrap-5.2.0-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../bootstrap-5.2.0-dist/js/bootstrap.min.js">
+  </head>
+  <body>
+    <img
+      class="mx-auto d-block logo-padding"
+      src="../assets/images/AppCenter.png"
+      alt="logo"
+    />
+    <form onsubmit="onSubmit(event)">
+      <div class="row input-padding">
+        <div class="col col-sm-4"></div>
+        <div class="col col-sm-2 text-right"><p>App name*:</p></div>
+        <div class="col col-sm-2">
+          <input
+            type="text"
+            id="name"
+            oninput="inputValidationAppName(value)"
+            name="name"
+            class="form-control"
+            placeholder="App Name"
+          />
+        </div>
+      </div>
+      <div class="row input-padding">
+        <div class="col col-sm-4"></div>
+        <div class="col col-sm-2 text-right"><p>App price*:</p></div>
+        <div class="col col-sm-2">
+          <input
+            type="text"
+            name="price"
+            id="price"
+            oninput="inputValidationAppPrice(value)"
+            class="form-control"
+            placeholder="App price in $"
+          />
+        </div>
+      </div>
+      <div class="row app-desction-row-padding">
+        <div class="col col-sm-4"></div>
+        <div class="col col-sm-2 text-right"><p>App description:</p></div>
+        <div class="col col-sm-2">
+          <input
+            type="text"
+            name="description"
+            class="form-control app-descrition"
+            placeholder="App descritption"
+          />
+        </div>
+      </div>
+        <div class="row input-padding">
+            <div class="col col-sm-4"></div>
+            <div class="col col-sm-2 text-right"><p>Company Name:</p></div>
+            <div class="col col-sm-2"><input type="text"  name ="companyName"  class = "form-control" placeholder="Company name"> </input></div>
+        </div>
+        <div class="row input-padding">
+            <div class="col col-sm-4"></div>
+            <div class="col col-sm-2 text-right"><p>Image url:</p></div>
+            <div class="col col-sm-2"><input type="text"  name ="imageUrl"  class = "form-control" placeholder="Image url"> </input></div>
+        </div>
+        <div class = "row">
+            <div class="col col-sm-6"></div>
+            <div class="col col-sm-4"><input type="submit" value = "publish application" class = "btn btn-success"> </input></div>    
+        </div>
+        <div class = "row">
+            <div class="col col-sm-4"></div>
+            <div class="col col-sm-4"> <b>* -Required</b></div>    
+        </div>
+        <div class = "row">
+            <div class="col col-sm-6"></div>
+            <div class="col col-sm-4"> <p id = "error msg" class= "text-danger"></p></div>    
+        </div>
+    </form>
+    <script src="../controllers/addApplication.js" type="module"></script>
+  </body>
+</html>
